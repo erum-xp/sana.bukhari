@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 25, 0);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.navbar img{
+    height: 70px;
+}
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+
+}
+.search-bar{
+    height: 40px;
+    width: 20%;
+    margin-right: 50px;
+    /* background-color: aqua; */
+}
+.search-bar input{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    /* background-color: transparent; */
+    
+}
+/* navbar end */
+/* contain box 1 start */
+.contain{
+    height: 800px;
+    width: 90%;
+    /* background-color: aqua; */
+    /* margin-left: 100px; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contain img{
+    height: 600px;
+    /* margin-left: 180px; */
+}
+.box1{
+    height: 700px;
+    width: 60%;
+    /* background-color: yellowgreen; */
+}
+
+@keyframes slideInLeft 
+{
+    from{
+        transform: translateX(-400px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+.needle-img{
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    
+}
+.box1 h1{
+    color: rgb(194, 127, 4);
+    text-transform: uppercase;
+    margin-top: 50px;
+
+}
+.about-para{
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    
+}
+/* contain box 1 end */
+/* footer stert */
+footer{
+background-color: black;
+color: white;
+}
+#fbox{
+    margin-left: 20px;
+    color: white;
+}
+
+#aa{
+    color: white;
+}
+/* footer end */
+
+
+@media (max-width: 1000px){
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        position: absolute;
+        top: 80px;
+        /* background-color: aqua; */
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -1500px;
+        
+
+    }
+    .nav-links li{
+        margin: 20px;
+        margin-top: 50px;
+    }
+    .search-bar {
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        margin-left: 100px;
+    }
+    .search-bar input{
+        width: 80%;
+        border: 1px solid wheat;
+    }
+ 
+}
+
+
+
+
+
+/* * ==navbar responsive media qurary end for smoll scren end ================ */
+/* For very small screens: 200px - 400px */
+@media (min-width: 200px) and (max-width: 400px) {
+   .search-bar{
+    display: none;
+
+   }
+   .contain{
+        height: 2000px;
+        width: 100%;
+    }
+    .about-para{
+        font-size: 10px;
+    }
+
+
+}
+
+/* =====responsive for mobile screen===== */
+@media (min-width: 400px) and (max-width: 760px) {
+    .search-bar{
+        display: none;
+    }
+    .contain{
+        height: 1100px;
+        width: 100%;
+    }
+    .about-para{
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* =======responsive for long screeen===== */
+@media (min-width: 760px) and (max-width: 1000px) {
+   .contain{
+    height: 1100px;
+   }
+   .about-para{
+   font-size: 10px;
+   }
+    
+} 
+
+@media (min-width: 1000px) and (max-width: 2100px) {
+.contain{
+    height: 1500px;
+}
+.about-para{
+    font-size: 20px;
+}
+   
+    
+}

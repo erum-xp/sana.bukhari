@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 25, 0);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.navbar img{
+    height: 70px;
+}
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+
+}
+.search-bar{
+    height: 40px;
+    width: 20%;
+    margin-right: 50px;
+    /* background-color: aqua; */
+} 
+.search-bar input{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    /* background-color: transparent; */
+    
+}
+/* main box start */
+.main-box{
+    height: 800px;
+    width: 90%;
+    /* background-color: blueviolet; */
+    margin-top: 50px;
+    margin-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-box1{
+    height: 500px;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-box2{
+    height: 500px;
+    width: 50%;
+    background-color: rgb(235, 234, 234);
+    box-shadow: 2px rgba(0, 0, 0, 0.5);
+}
+.location-box{
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#icon-loc{
+    margin: 10px;
+}
+.adress{
+    height: 70px;
+    width: 70%;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    align-items: center;
+
+}
+.adress p{
+    color: black;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.adress p:hover{
+    color: orangered;
+    transition: all 1s ease;
+}
+.location-icon:hover{
+    background-color: rgb(255, 94, 0);
+    transition: all 0.5s ease-in;
+}
+.location-icon{
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+    border-radius: 10px;
+}
+/* contact box2 */
+.contact-box2{
+    height: 500px;
+    width: 50%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.name-mail-box{
+    height: 80px;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.name-box1{
+    height: 50px;
+    width: 50%;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+.name-box1 p{
+    margin-top: 12px;
+    margin-left: 20px;
+    color: gray;
+    text-transform: capitalize;
+}
+.mail-box1{
+    height: 50px;
+    width: 40%;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+.mail-box1 p{
+    margin-top: 12px;
+    margin-left: 20px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.m-box1{
+    height: 200px;
+    width: 90%;
+    /* background-color: aqua; */
+    margin-left: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.m-box1 p{
+    text-transform: capitalize;
+    color: gray;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.contact-box2 button{
+    height: 70px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: royalblue;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    margin-left: 400px;
+}
+.contact-box2 button:hover{
+    background-color: blue;
+    transition: all 1s ease-in;
+}
+
+
+
+
+
+
+
+/* footer stert */
+footer{
+background-color: black;
+color: white;
+}
+#fbox{
+    margin-left: 20px;
+    color: white;
+}
+
+#aa{
+    color: white;
+}
+/* footer end */
+
+
+
+
+@media (max-width: 1000px){
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        position: absolute;
+        top: 80px;
+        background-color: aqua;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -1500px;
+        
+
+    }
+    .nav-links li{
+        margin: 20px;
+        margin-top: 50px;
+    }
+     .search-bar {
+       display: none;
+    } 
+ 
+}
+.location{
+    height: 800px;
+    width: 90%;
+    /* background-color: black; */
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+
+/* Base styles - applied to all screen sizes */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (200px - 400px) */
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  /* Styles for very small screens like smartwatches, small mobile devices */
+.location{
+  height: 800px;
+  width: 100%;
+  margin-left: 0;
+ }
+  
+ .main-box{
+    height: 1200px;
+    width: 100%;
+  margin-left: 5px;
+  flex-wrap: wrap;
+ }
+ .contact-box1{
+  width: 100%;
+  align-items: center;
+ }
+ .adress{
+  display: flex;
+  align-items: center;
+ }
+
+ .adress p{
+  margin-top: 10px;
+  font-size: 20px;
+ }
+  
+ .contact-box2{
+  width: 100%;
+  
+ }
+  
+  /* Add more specific styles for this range */
+}
+
+/* Small devices (400px - 760px) - typical mobile phones */
+@media only screen and (min-width: 400px) and (max-width: 760px) {
+  /* Styles for mobile devices */
+ .location{
+  height: 800px;
+  width: 100%;
+  margin-left: 0;
+ }
+  
+ .main-box{
+    height: 1100px;
+    width: 100%;
+  margin-left: 10px;
+ }
+ .contact-box1{
+  width: 100%;
+  align-items: center;
+ }
+ .adress{
+  display: flex;
+  align-items: center;
+ }
+
+ .adress p{
+  margin-top: 10px;
+  font-size: 25px;
+ }
+  
+ .contact-box2{
+  width: 100%;
+  
+ }
+  
+  /* Add more mobile-specific styles */
+}
+
+/* Medium devices (760px - 1000px) - tablets */
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+  /* Styles for tablets */
+  .location{
+  height: 800px;
+  width: 100%;
+  margin-left: 0;
+ }
+  
+ .main-box{
+    height: 1100px;
+    width: 100%;
+  margin-left: 10px;
+ }
+ .contact-box1{
+  width: 100%;
+  align-items: center;
+ }
+ .adress{
+  display: flex;
+  align-items: center;
+ }
+
+ .adress p{
+  margin-top: 10px;
+  font-size: 25px;
+ }
+  
+ .contact-box2{
+  width: 100%;
+  
+ }
+  
+  /* Add more tablet-specific styles */
+}
+
+/* Large devices (1000px - 1800px) - laptops and desktops */
+@media only screen and (min-width: 1000px) and (max-width: 1800px) {
+  /* Styles for desktop screens */
+  
+   .location{
+  height: 800px;
+  width: 100%;
+  margin-left: 0;
+ }
+  
+ .main-box{
+    height: 1000px;
+  margin-left: 10px;
+ }
+ .contact-box1{
+  width: 100%;
+  align-items: center;
+ }
+ .adress{
+  display: flex;
+  align-items: center;
+ }
+
+ .adress p{
+  margin-top: 10px;
+  font-size: 25px;
+ }
+  
+ .contact-box2{
+  width: 100%;
+  
+ }
+  /* Add more desktop-specific styles */
+}
+
+
+
+
+
+

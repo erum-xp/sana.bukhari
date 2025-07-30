@@ -1,0 +1,500 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 25, 0);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.navbar img{
+    height: 70px;
+}
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+
+}
+.search-bar{
+    height: 40px;
+    width: 20%;
+    margin-right: 50px;
+    /* background-color: aqua; */
+} 
+.search-bar input{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    /* background-color: transparent; */
+    
+}
+.manu-bar{
+    margin-right: 50px;
+    font-size: 20px;
+    display: none;
+}
+/* =======navbar for ul li list end=============== */
+/* product heading  */
+.heading-pro{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* cursor: pointer; */
+    /* margin-top: 50px; */
+}
+.pro-box1{
+    height: 100px;
+    width: 70%;
+    /* background-color: blue; */
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+padding-left: 100px;
+cursor: pointer;
+/* padding-top: 50px; */
+}
+#icon-pro{
+    margin-right: 100px;
+    font-size: 30px;
+    color: rgb(255, 253, 253);
+    cursor: pointer;
+}
+#icon-pro:hover{
+font-size: 100px;
+}
+.pro-box1:hover{
+    color: rgb(253, 67, 67);
+    transition: all 1s ease-in-out;
+    font-size: 45px;
+}
+/* all kind of sewing machine heading */
+.m-h1 h1{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+/* main box start */
+.main-boxx{
+    height: 2700px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container1{
+    height: 630px;
+    width: 500px;
+    /* background-color: yellowgreen; */
+    box-shadow: 5px 5px  5px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    /* margin-left: 30px; */
+    margin: 20px;
+    animation: slideL18;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    /* margin-right: 0px; */
+
+}
+@keyframes slideL18 {
+    from{
+        transform: translateX(-400px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.col-12 img{
+    height: 300px;
+    width: 90%;
+    margin: 15px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+.container1:hover{
+    transform: scale(1.05);
+}
+.col-12 img:hover{
+    transform: scale(1.05);
+}
+.l18-disc{
+    height: 300px;
+    width: 90%;
+    margin: 10px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.l18-disc s{
+color: orangered;
+font-size: 20px;
+font-weight: bold;
+
+}
+.l18-disc p{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+
+}
+.l18-button{
+    height: 70px;
+    width: 160px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 30px;
+}
+.l18-disc s:hover{
+    color: orangered;
+    color: black;
+    transition: all 0.5s ease; 
+}
+.l18-button:hover{
+    background-color: orangered;
+    color: black;
+    transition: all 0.5s ease; 
+
+}
+.l18-disc p:hover{
+    color: orangered;
+    transition: all 0.5s ease; 
+    
+}
+/* main-box2 */
+.main-box2{
+    height: 800px;
+    width: 80%;
+    /* background-color: aqua; */
+    margin: 150px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+      background-image: url(/robo6.png);
+    background-size: cover;
+    animation: robo;
+    animation-duration: 12s;
+    animation-timing-function: initial;
+    animation-iteration-count: infinite;
+}
+
+.main-box2:hover{
+    transform: scale(1.05);
+}
+
+@keyframes robo {
+    0%{
+        background-image: url(/robo\ pic\ 1.png)
+    }
+    35%{
+        background-image: url(/robo9.png);
+    }
+    75%{
+        background-image: url(/robo6.png);
+    }
+}
+.main-box3{
+    height: 800px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* footer stert */
+footer{
+background-color: black;
+color: white;
+}
+#fbox{
+    margin-left: 20px;
+    color: white;
+}
+
+#aa{
+    color: white;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========navbar responsive media qurary stert for smoll scren strt ================ */
+@media (max-width: 1000px){
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        position: absolute;
+        top: 80px;
+        background-color: rgba(255, 94, 0, 0.74);
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -1500px;
+        
+
+    }
+    .nav-links li{
+        margin: 20px;
+        margin-top: 50px;
+    }
+     .search-bar {
+       display: none;
+    } 
+    .manu-bar{
+        display: block;
+    }
+    .mobile-bar{
+        margin-top: 0;
+    }
+    .logo{
+        height: auto;
+        width: 100px;
+    }
+    /* main box */
+    .container1{
+        width: 400px;
+        margin-left: 0;
+    }
+    .main-boxx{
+        height: 5000px;
+        width: 100%;
+        /* background-color: black; */
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+}
+/* * ==navbar responsive media qurary end for smoll scren end ================ */
+/* For very small screens: 200px - 400px */
+@media (min-width: 200px) and (max-width: 400px) {
+    .navbar{
+        height: 50px;
+    }
+    .navbar img{
+        height: 50px;
+        width: 100px;
+    }
+/* ==product heading */
+.pro-box1{
+    font-size: 15px;
+    padding-left: 0px;
+
+}
+#icon-pro{
+    margin-right: 0;
+    font-size: 15px;
+}
+ /* main box */
+    .container1{
+        height: 550px;
+        width: 300px;
+        margin: 10px;
+        margin-left: 0;
+    }
+    .main-boxx{
+        height: 6000px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+     
+     .main-box3{
+        height: 1800px;
+        width: 100%;
+    }
+    .main-box2{
+
+        height: 300px;
+margin: 50px;
+    }
+
+
+}
+
+/* =====responsive for mobile screen===== */
+@media (min-width: 400px) and (max-width: 760px) {
+    .navbar{
+        height: 50px;
+    }
+    .navbar img{
+        height: 50px;
+        width: 200px;
+    }
+    /* product heading */
+    .pro-box1{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    #icon-pro{
+        margin-right: 0px;
+        font-size: 15px;
+    }
+     /* main box */
+    .container1{
+        height: 550px;
+        width: 300px;
+        margin: 10px
+    }
+    .container1 img{
+        height: 200px;
+    }
+.main-boxx{
+    height: 5500px;
+    width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-box2{
+        height: 450px;
+    }
+    .main-box3{
+        height: 1500px;
+        width: 100%;
+    }
+    .main-box2{
+
+        height: 350px;
+margin: 50px;
+    }
+}
+
+
+
+
+/* =======responsive for long screeen===== */
+@media (min-width: 760px) and (max-width: 1000px) {
+    .navbar{
+        height: 50px;
+    }
+    .navbar img{
+        height: 50px;
+        width: 200px;
+    }
+    /* product heading */
+.pro-box1{
+    font-size: 20px;
+    margin-left: 10px;
+}
+#icon-pro{
+    padding-left: 10px;
+    font-size: 20px;
+}
+ /* main box */
+    .container1{
+    height: 530px;
+    width: 350px;
+    margin-top: 20px;
+
+}
+.container1 img{
+    height: 200px;
+}
+.main-boxx{
+    height: 4700px;
+    width: 100%;
+    /* background-color: black; */
+}
+   .main-box2{
+        height: 400px;
+        margin: 50px;
+        /* background-color: black; */
+    }
+      .main-box3{
+        height: 1600px;
+        width: 100%;
+        /* background-color: rgb(180, 19, 19); */
+    }
+    
+} 
+
+@media (min-width: 1000px) and (max-width: 2100px) {
+
+
+    .main-boxx{
+    height: 5200px;
+    width: 100%;
+    /* background-color: black; */
+     display: flex;
+        justify-content: space-between;
+}
+.container1{
+    margin: 0;
+}
+.main-box2{
+    height: 600px;
+    margin: 100px;
+
+    
+}
+  .main-box3{
+        height: 1500px;
+        width: 100%;
+        /* background-color: rgb(155, 30, 30); */
+    }
+    
+}

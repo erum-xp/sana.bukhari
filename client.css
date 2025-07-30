@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 25, 0);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.navbar img{
+    height: 70px;
+}
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+
+}
+.search-bar{
+    height: 40px;
+    width: 20%;
+    margin-right: 50px;
+    /* background-color: aqua; */
+}
+.search-bar input{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    /* background-color: transparent; */
+    
+}
+/* ===========main client box start======== */
+.client{
+    height: 400px;
+    width: 90%;
+    background-image: url(/img23.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 50px auto 0px auto;
+    border-radius: 20px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+.client-heading{
+text-decoration: none;
+color: rgb(255, 0, 0);
+font-size: 70px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+margin-left: 150px;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+/* main-box start */
+.main-box2{
+    height: auto;
+    width: 90%;
+    /* background-color: aqua; */
+    margin: 50px auto 0px auto;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-1{
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: clientBox;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 10px 10px 10px 10px rgba(95, 94, 94, 0.5);
+}
+.container-1:hover{
+    transform: scale(1.05);
+}
+.container-1:hover{
+    transform: scale(1.05);
+}
+@keyframes clientBox {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+/* footer stert */
+footer{
+background-color: black;
+color: white;
+}
+#fbox{
+    margin-left: 20px;
+    color: white;
+}
+
+#aa{
+    color: white;
+}
+/* footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======small screen size navbar================== */
+@media (max-width: 1000px){
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        position: absolute;
+        top: 80px;
+        background-color: aqua;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -1500px;
+        
+
+    }
+    .nav-links li{
+        margin: 20px;
+        margin-top: 50px;
+    }
+    .search-bar {
+        display: none;
+       
+    }
+    .search-bar input{
+        width: 80%;
+        border: 1px solid wheat;
+background-color: aqua;
+ } 
+}
+
+/* =====screen Responsive Media Quarray ====== */
+@media (min-width: 200px) and (max-width: 400px){
+.search-bar{
+    display: none;
+}
+.client{
+    height: 300px;
+    width: 90%;
+    margin-left: 10px;
+}
+.client-heading{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+}
+@media (min-width: 400px) and (max-width: 760px){
+    .search-bar{
+        display: none;
+    }
+.client{
+    height: 100px;
+    width: 90%;
+    margin-left: 30px;
+}
+.client-heading{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+}
+
+@media (min-width: 760px) and (max-width: 1000px){
+    .search-bar{
+        display: none;
+    }
+}
+.container-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+}
+.client{
+    height: 350px;
+    width: 90%;
+    margin-left: 30px;
+}
+.client-heading{
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+
+/* Responsive website start with profasionaly */
+@media screen and (max-width: 1000px){
+    .main-box2{
+        height: auto;
+        width: 90%;
+        margin: 50px auto 0px auto;
+        background-color: palevioletred;
+    }
+    
+}
+@media screen and (max-width: 857px){
+    .container-1{
+        height: 200px;
+        width: 200px;
+    }
+    .container-1 img{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 662px){
+    .main-box2{
+        width: 100%;
+        display: flex;
+    }
+    .container-1{
+        height: 170px;
+        width: 180px;
+
+    }
+    .container-1 img{
+        width: 170px;
+    }
+}
+@media screen and (max-width: 627px) {
+    .main-box2{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    .container-1{
+        height: 250px;
+        width: 80%;
+        margin: 20px auto 10px auto;
+
+    }
+    .container-1 img{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 415px){
+    .container-1{
+        height: 200px;
+        width: 80%;
+        margin: 20px auto 20px auto;
+    }
+}
+@media screen and (min-width: 1000px){
+.main-box2{
+    height: auto;
+
+}
+}
+
